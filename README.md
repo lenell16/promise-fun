@@ -4,7 +4,7 @@
 
 ## Install
 ```
-$ npm install p-progress
+$ npm install promise-fun
 ```
 
 ## Usage

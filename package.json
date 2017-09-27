@@ -1,11 +1,20 @@
 {
   "name": "promise-fun",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Aggregation of Sindresorhus's promise-fun npm modules",
   "main": "index.js",
   "author": "Alonzo Thomas",
   "repository": "github:lenell16/promise-fun",
-  "keywords": ["promise", "async", "await", "promises", "concurrently", "concurrency", "parallel", "bluebird"],
+  "keywords": [
+    "promise",
+    "async",
+    "await",
+    "promises",
+    "concurrently",
+    "concurrency",
+    "parallel",
+    "bluebird"
+  ],
   "license": "MIT",
   "dependencies": {
     "delay": "^2.0.0",
