@@ -1,0 +1,1622 @@
+{
+  "delay": {
+    "version": "7.0.0",
+    "typeEntry": "delay/index.d.ts",
+    "camelKey": "delay",
+    "hasDefault": true,
+    "exportEquals": false,
+    "primaryType": "function",
+    "defaultType": "function",
+    "valueNamed": [
+      "clearDelay",
+      "createDelay",
+      "rangeDelay"
+    ],
+    "typeNamed": [
+      "Options"
+    ],
+    "runtimeNamed": [
+      "clearDelay",
+      "createDelay",
+      "rangeDelay"
+    ],
+    "topLevel": {
+      "namespace": false,
+      "values": [
+        {
+          "from": "default",
+          "to": "delay"
+        },
+        {
+          "from": "clearDelay",
+          "to": "delayClear"
+        },
+        {
+          "from": "createDelay",
+          "to": "delayCreate"
+        },
+        {
+          "from": "rangeDelay",
+          "to": "delayRange"
+        }
+      ],
+      "types": [
+        "delayOptions"
+      ]
+    }
+  },
+  "hard-rejection": {
+    "version": "2.1.0",
+    "typeEntry": "hard-rejection/index.d.ts",
+    "camelKey": "hardRejection",
+    "hasDefault": true,
+    "exportEquals": true,
+    "primaryType": "function",
+    "defaultType": "function",
+    "valueNamed": [],
+    "typeNamed": [],
+    "runtimeNamed": [],
+    "topLevel": {
+      "namespace": false,
+      "values": [
+        {
+          "from": "default",
+          "to": "hardRejection"
+        }
+      ],
+      "types": []
+    }
+  },
+  "loud-rejection": {
+    "version": "2.2.0",
+    "typeEntry": "loud-rejection/index.d.ts",
+    "camelKey": "loudRejection",
+    "hasDefault": true,
+    "exportEquals": true,
+    "primaryType": "function",
+    "defaultType": "function",
+    "valueNamed": [],
+    "typeNamed": [],
+    "runtimeNamed": [],
+    "topLevel": {
+      "namespace": false,
+      "values": [
+        {
+          "from": "default",
+          "to": "loudRejection"
+        }
+      ],
+      "types": []
+    }
+  },
+  "make-synchronous": {
+    "version": "2.1.0",
+    "typeEntry": "make-synchronous/index.d.ts",
+    "camelKey": "makeSynchronous",
+    "hasDefault": true,
+    "exportEquals": false,
+    "primaryType": "function",
+    "defaultType": "function",
+    "valueNamed": [],
+    "typeNamed": [
+      "AnyAsyncFunction",
+      "ReplaceReturnType"
+    ],
+    "runtimeNamed": [],
+    "topLevel": {
+      "namespace": false,
+      "values": [
+        {
+          "from": "default",
+          "to": "makeSynchronous"
+        }
+      ],
+      "types": [
+        "makeSynchronousAnyAsyncFunction",
+        "makeSynchronousReplaceReturnType"
+      ]
+    }
+  },
+  "p-all": {
+    "version": "5.0.1",
+    "typeEntry": "p-all/index.d.ts",
+    "camelKey": "pAll",
+    "hasDefault": true,
+    "exportEquals": false,
+    "primaryType": "function",
+    "defaultType": "function",
+    "valueNamed": [],
+    "typeNamed": [
+      "Options"
+    ],
+    "runtimeNamed": [],
+    "topLevel": {
+      "namespace": false,
+      "values": [
+        {
+          "from": "default",
+          "to": "pAll"
+        }
+      ],
+      "types": [
+        "pAllOptions"
+      ]
+    }
+  },
+  "p-any": {
+    "version": "4.0.0",
+    "typeEntry": "p-any/index.d.ts",
+    "camelKey": "pAny",
+    "hasDefault": true,
+    "exportEquals": false,
+    "primaryType": "function",
+    "defaultType": "function",
+    "valueNamed": [
+      "AggregateError"
+    ],
+    "typeNamed": [
+      "CancelablePromise",
+      "Options",
+      "Value"
+    ],
+    "runtimeNamed": [
+      "AggregateError"
+    ],
+    "topLevel": {
+      "namespace": false,
+      "values": [
+        {
+          "from": "default",
+          "to": "pAny"
+        },
+        {
+          "from": "AggregateError",
+          "to": "pAnyAggregateError"
+        }
+      ],
+      "types": [
+        "pAnyCancelablePromise",
+        "pAnyOptions",
+        "pAnyValue"
+      ]
+    }
+  },
+  "p-break": {
+    "version": "2.0.0",
+    "typeEntry": "p-break/index.js",
+    "untyped": true,
+    "camelKey": "pBreak",
+    "hasDefault": true,
+    "primaryType": "function",
+    "defaultType": "function",
+    "valueNamed": [],
+    "typeNamed": [],
+    "runtimeNamed": [],
+    "topLevel": {
+      "namespace": false,
+      "values": [
+        {
+          "from": "default",
+          "to": "pBreak"
+        }
+      ],
+      "types": [
+        "pBreakFunction"
+      ]
+    }
+  },
+  "p-cancelable": {
+    "version": "4.0.1",
+    "typeEntry": "p-cancelable/index.d.ts",
+    "camelKey": "pCancelable",
+    "hasDefault": true,
+    "exportEquals": false,
+    "primaryType": "function",
+    "defaultType": "function",
+    "valueNamed": [
+      "CancelError"
+    ],
+    "typeNamed": [
+      "OnCancelFunction"
+    ],
+    "runtimeNamed": [
+      "CancelError"
+    ],
+    "topLevel": {
+      "namespace": false,
+      "values": [
+        {
+          "from": "default",
+          "to": "pCancelable"
+        },
+        {
+          "from": "CancelError",
+          "to": "pCancelableCancelError"
+        }
+      ],
+      "types": [
+        "pCancelableOnCancelFunction"
+      ]
+    }
+  },
+  "p-catch-if": {
+    "version": "3.0.0",
+    "typeEntry": "p-catch-if/index.d.ts",
+    "camelKey": "pCatchIf",
+    "hasDefault": true,
+    "exportEquals": false,
+    "primaryType": "function",
+    "defaultType": "function",
+    "valueNamed": [],
+    "typeNamed": [
+      "ErrorConstructor",
+      "Predicate"
+    ],
+    "runtimeNamed": [],
+    "topLevel": {
+      "namespace": false,
+      "values": [
+        {
+          "from": "default",
+          "to": "pCatchIf"
+        }
+      ],
+      "types": [
+        "pCatchIfErrorConstructor",
+        "pCatchIfPredicate"
+      ]
+    }
+  },
+  "p-debounce": {
+    "version": "5.1.0",
+    "typeEntry": "p-debounce/index.d.ts",
+    "camelKey": "pDebounce",
+    "hasDefault": true,
+    "exportEquals": false,
+    "primaryType": "function",
+    "defaultType": "function",
+    "valueNamed": [],
+    "typeNamed": [
+      "Options",
+      "PromiseOptions"
+    ],
+    "runtimeNamed": [],
+    "topLevel": {
+      "namespace": false,
+      "values": [
+        {
+          "from": "default",
+          "to": "pDebounce"
+        }
+      ],
+      "types": [
+        "pDebounceOptions",
+        "pDebouncePromiseOptions"
+      ]
+    }
+  },
+  "p-defer": {
+    "version": "4.0.1",
+    "typeEntry": "p-defer/index.d.ts",
+    "camelKey": "pDefer",
+    "hasDefault": true,
+    "exportEquals": false,
+    "primaryType": "function",
+    "defaultType": "function",
+    "valueNamed": [],
+    "typeNamed": [
+      "DeferredPromise"
+    ],
+    "runtimeNamed": [],
+    "topLevel": {
+      "namespace": false,
+      "values": [
+        {
+          "from": "default",
+          "to": "pDefer"
+        }
+      ],
+      "types": [
+        "pDeferDeferredPromise"
+      ]
+    }
+  },
+  "p-do-whilst": {
+    "version": "2.1.0",
+    "typeEntry": "p-do-whilst/index.d.ts",
+    "camelKey": "pDoWhilst",
+    "hasDefault": true,
+    "exportEquals": false,
+    "primaryType": "function",
+    "defaultType": "function",
+    "valueNamed": [],
+    "typeNamed": [],
+    "runtimeNamed": [],
+    "topLevel": {
+      "namespace": false,
+      "values": [
+        {
+          "from": "default",
+          "to": "pDoWhilst"
+        }
+      ],
+      "types": []
+    }
+  },
+  "p-each-series": {
+    "version": "3.0.0",
+    "typeEntry": "p-each-series/index.d.ts",
+    "camelKey": "pEachSeries",
+    "hasDefault": true,
+    "exportEquals": false,
+    "primaryType": "function",
+    "defaultType": "function",
+    "valueNamed": [],
+    "typeNamed": [
+      "StopSymbol"
+    ],
+    "runtimeNamed": [],
+    "topLevel": {
+      "namespace": false,
+      "values": [
+        {
+          "from": "default",
+          "to": "pEachSeries"
+        }
+      ],
+      "types": [
+        "pEachSeriesStopSymbol"
+      ]
+    }
+  },
+  "p-event": {
+    "version": "7.1.0",
+    "typeEntry": "p-event/index.d.ts",
+    "camelKey": "pEvent",
+    "hasDefault": false,
+    "exportEquals": false,
+    "primaryType": "function",
+    "defaultType": null,
+    "valueNamed": [
+      "TimeoutError",
+      "pEvent",
+      "pEventIterator",
+      "pEventMultiple"
+    ],
+    "typeNamed": [
+      "AddRemoveListener",
+      "CancelablePromise",
+      "Emitter",
+      "FilterFunction",
+      "IteratorMultiArgumentsOptions",
+      "IteratorOptions",
+      "MultiArgumentsOptions",
+      "MultipleMultiArgumentsOptions",
+      "MultipleOptions",
+      "Options",
+      "TypedEventEmitter"
+    ],
+    "runtimeNamed": [
+      "TimeoutError",
+      "pEvent",
+      "pEventIterator",
+      "pEventMultiple"
+    ],
+    "topLevel": {
+      "namespace": false,
+      "values": [
+        {
+          "from": "pEvent",
+          "to": "pEvent"
+        },
+        {
+          "from": "TimeoutError",
+          "to": "pEventTimeoutError"
+        },
+        {
+          "from": "pEventIterator",
+          "to": "pEventIterator"
+        },
+        {
+          "from": "pEventMultiple",
+          "to": "pEventMultiple"
+        }
+      ],
+      "types": [
+        "pEventAddRemoveListener",
+        "pEventCancelablePromise",
+        "pEventEmitter",
+        "pEventFilterFunction",
+        "pEventIteratorMultiArgumentsOptions",
+        "pEventIteratorOptions",
+        "pEventMultiArgumentsOptions",
+        "pEventMultipleMultiArgumentsOptions",
+        "pEventMultipleOptions",
+        "pEventOptions",
+        "pEventTypedEventEmitter"
+      ]
+    }
+  },
+  "p-every": {
+    "version": "2.0.0",
+    "typeEntry": "p-every/index.d.ts",
+    "camelKey": "pEvery",
+    "hasDefault": true,
+    "exportEquals": false,
+    "primaryType": "function",
+    "defaultType": "function",
+    "valueNamed": [],
+    "typeNamed": [],
+    "runtimeNamed": [],
+    "topLevel": {
+      "namespace": false,
+      "values": [
+        {
+          "from": "default",
+          "to": "pEvery"
+        }
+      ],
+      "types": []
+    }
+  },
+  "p-filter": {
+    "version": "4.1.0",
+    "typeEntry": "p-filter/index.d.ts",
+    "camelKey": "pFilter",
+    "hasDefault": true,
+    "exportEquals": false,
+    "primaryType": "function",
+    "defaultType": "function",
+    "valueNamed": [
+      "pFilterIterable"
+    ],
+    "typeNamed": [
+      "Options"
+    ],
+    "runtimeNamed": [
+      "pFilterIterable"
+    ],
+    "topLevel": {
+      "namespace": false,
+      "values": [
+        {
+          "from": "default",
+          "to": "pFilter"
+        },
+        {
+          "from": "pFilterIterable",
+          "to": "pFilterIterable"
+        }
+      ],
+      "types": [
+        "pFilterOptions"
+      ]
+    }
+  },
+  "p-forever": {
+    "version": "4.0.0",
+    "typeEntry": "p-forever/index.d.ts",
+    "camelKey": "pForever",
+    "hasDefault": true,
+    "exportEquals": false,
+    "primaryType": "function",
+    "defaultType": "function",
+    "valueNamed": [],
+    "typeNamed": [
+      "Options"
+    ],
+    "runtimeNamed": [],
+    "topLevel": {
+      "namespace": false,
+      "values": [
+        {
+          "from": "default",
+          "to": "pForever"
+        }
+      ],
+      "types": [
+        "pForeverOptions"
+      ]
+    }
+  },
+  "p-if": {
+    "version": "3.0.0",
+    "typeEntry": "p-if/index.d.ts",
+    "camelKey": "pIf",
+    "hasDefault": true,
+    "exportEquals": false,
+    "primaryType": "function",
+    "defaultType": "function",
+    "valueNamed": [],
+    "typeNamed": [],
+    "runtimeNamed": [],
+    "topLevel": {
+      "namespace": false,
+      "values": [
+        {
+          "from": "default",
+          "to": "pIf"
+        }
+      ],
+      "types": []
+    }
+  },
+  "p-immediate": {
+    "version": "4.0.0",
+    "typeEntry": "p-immediate/index.d.ts",
+    "camelKey": "pImmediate",
+    "hasDefault": true,
+    "exportEquals": false,
+    "primaryType": "function",
+    "defaultType": "function",
+    "valueNamed": [],
+    "typeNamed": [],
+    "runtimeNamed": [],
+    "topLevel": {
+      "namespace": false,
+      "values": [
+        {
+          "from": "default",
+          "to": "pImmediate"
+        }
+      ],
+      "types": []
+    }
+  },
+  "p-is-promise": {
+    "version": "4.0.0",
+    "typeEntry": "p-is-promise/index.d.ts",
+    "camelKey": "pIsPromise",
+    "hasDefault": true,
+    "exportEquals": false,
+    "primaryType": "function",
+    "defaultType": "function",
+    "valueNamed": [],
+    "typeNamed": [],
+    "runtimeNamed": [],
+    "topLevel": {
+      "namespace": false,
+      "values": [
+        {
+          "from": "default",
+          "to": "pIsPromise"
+        }
+      ],
+      "types": []
+    }
+  },
+  "p-lazy": {
+    "version": "5.0.0",
+    "typeEntry": "p-lazy/index.d.ts",
+    "camelKey": "pLazy",
+    "hasDefault": true,
+    "exportEquals": false,
+    "primaryType": "function",
+    "defaultType": "function",
+    "valueNamed": [],
+    "typeNamed": [],
+    "runtimeNamed": [],
+    "topLevel": {
+      "namespace": false,
+      "values": [
+        {
+          "from": "default",
+          "to": "pLazy"
+        }
+      ],
+      "types": []
+    }
+  },
+  "p-limit": {
+    "version": "7.3.2",
+    "typeEntry": "p-limit/index.d.ts",
+    "camelKey": "pLimit",
+    "hasDefault": true,
+    "exportEquals": false,
+    "primaryType": "function",
+    "defaultType": "function",
+    "valueNamed": [
+      "limitFunction"
+    ],
+    "typeNamed": [
+      "LimitFunction",
+      "Options"
+    ],
+    "runtimeNamed": [
+      "limitFunction"
+    ],
+    "topLevel": {
+      "namespace": false,
+      "values": [
+        {
+          "from": "default",
+          "to": "pLimit"
+        },
+        {
+          "from": "limitFunction",
+          "to": "pLimitFunction"
+        }
+      ],
+      "types": [
+        "pLimitLimitFunction",
+        "pLimitOptions"
+      ]
+    }
+  },
+  "p-locate": {
+    "version": "7.0.0",
+    "typeEntry": "p-locate/index.d.ts",
+    "camelKey": "pLocate",
+    "hasDefault": true,
+    "exportEquals": false,
+    "primaryType": "function",
+    "defaultType": "function",
+    "valueNamed": [],
+    "typeNamed": [
+      "Options"
+    ],
+    "runtimeNamed": [],
+    "topLevel": {
+      "namespace": false,
+      "values": [
+        {
+          "from": "default",
+          "to": "pLocate"
+        }
+      ],
+      "types": [
+        "pLocateOptions"
+      ]
+    }
+  },
+  "p-log": {
+    "version": "3.0.0",
+    "typeEntry": "p-log/index.d.ts",
+    "camelKey": "pLog",
+    "hasDefault": true,
+    "exportEquals": false,
+    "primaryType": "function",
+    "defaultType": "function",
+    "valueNamed": [],
+    "typeNamed": [
+      "Logger"
+    ],
+    "runtimeNamed": [],
+    "topLevel": {
+      "namespace": false,
+      "values": [
+        {
+          "from": "default",
+          "to": "pLog"
+        }
+      ],
+      "types": [
+        "pLogLogger"
+      ]
+    }
+  },
+  "p-map": {
+    "version": "7.0.7",
+    "typeEntry": "p-map/index.d.ts",
+    "camelKey": "pMap",
+    "hasDefault": true,
+    "exportEquals": false,
+    "primaryType": "function",
+    "defaultType": "function",
+    "valueNamed": [
+      "pMapIterable",
+      "pMapSkip"
+    ],
+    "typeNamed": [
+      "BaseOptions",
+      "IterableOptions",
+      "Mapper",
+      "MaybePromise",
+      "Options"
+    ],
+    "runtimeNamed": [
+      "pMapIterable",
+      "pMapSkip"
+    ],
+    "topLevel": {
+      "namespace": false,
+      "values": [
+        {
+          "from": "default",
+          "to": "pMap"
+        },
+        {
+          "from": "pMapIterable",
+          "to": "pMapIterable"
+        },
+        {
+          "from": "pMapSkip",
+          "to": "pMapSkip"
+        }
+      ],
+      "types": [
+        "pMapBaseOptions",
+        "pMapIterableOptions",
+        "pMapMapper",
+        "pMapMaybePromise",
+        "pMapOptions"
+      ]
+    }
+  },
+  "p-map-series": {
+    "version": "3.0.0",
+    "typeEntry": "p-map-series/index.d.ts",
+    "camelKey": "pMapSeries",
+    "hasDefault": true,
+    "exportEquals": false,
+    "primaryType": "function",
+    "defaultType": "function",
+    "valueNamed": [],
+    "typeNamed": [],
+    "runtimeNamed": [],
+    "topLevel": {
+      "namespace": false,
+      "values": [
+        {
+          "from": "default",
+          "to": "pMapSeries"
+        }
+      ],
+      "types": []
+    }
+  },
+  "p-memoize": {
+    "version": "8.0.0",
+    "typeEntry": "p-memoize/dist/index.d.ts",
+    "camelKey": "pMemoize",
+    "hasDefault": true,
+    "exportEquals": false,
+    "primaryType": "function",
+    "defaultType": "function",
+    "valueNamed": [
+      "pMemoizeClear",
+      "pMemoizeDecorator"
+    ],
+    "typeNamed": [
+      "AnyAsyncFunction",
+      "CacheStorage",
+      "Options",
+      "ShouldCache"
+    ],
+    "runtimeNamed": [
+      "pMemoizeClear",
+      "pMemoizeDecorator"
+    ],
+    "topLevel": {
+      "namespace": false,
+      "values": [
+        {
+          "from": "default",
+          "to": "pMemoize"
+        },
+        {
+          "from": "pMemoizeClear",
+          "to": "pMemoizeClear"
+        },
+        {
+          "from": "pMemoizeDecorator",
+          "to": "pMemoizeDecorator"
+        }
+      ],
+      "types": [
+        "pMemoizeAnyAsyncFunction",
+        "pMemoizeCacheStorage",
+        "pMemoizeOptions",
+        "pMemoizeShouldCache"
+      ]
+    }
+  },
+  "p-min-delay": {
+    "version": "4.2.0",
+    "typeEntry": "p-min-delay/index.d.ts",
+    "camelKey": "pMinDelay",
+    "hasDefault": true,
+    "exportEquals": false,
+    "primaryType": "function",
+    "defaultType": "function",
+    "valueNamed": [],
+    "typeNamed": [
+      "Options"
+    ],
+    "runtimeNamed": [],
+    "topLevel": {
+      "namespace": false,
+      "values": [
+        {
+          "from": "default",
+          "to": "pMinDelay"
+        }
+      ],
+      "types": [
+        "pMinDelayOptions"
+      ]
+    }
+  },
+  "p-mutex": {
+    "version": "1.0.0",
+    "typeEntry": "p-mutex/index.d.ts",
+    "camelKey": "pMutex",
+    "hasDefault": true,
+    "exportEquals": false,
+    "primaryType": "function",
+    "defaultType": "function",
+    "valueNamed": [],
+    "typeNamed": [],
+    "runtimeNamed": [],
+    "topLevel": {
+      "namespace": false,
+      "values": [
+        {
+          "from": "default",
+          "to": "pMutex"
+        }
+      ],
+      "types": []
+    }
+  },
+  "p-one": {
+    "version": "2.0.0",
+    "typeEntry": "p-one/index.d.ts",
+    "camelKey": "pOne",
+    "hasDefault": true,
+    "exportEquals": false,
+    "primaryType": "function",
+    "defaultType": "function",
+    "valueNamed": [],
+    "typeNamed": [],
+    "runtimeNamed": [],
+    "topLevel": {
+      "namespace": false,
+      "values": [
+        {
+          "from": "default",
+          "to": "pOne"
+        }
+      ],
+      "types": []
+    }
+  },
+  "p-pipe": {
+    "version": "4.0.0",
+    "typeEntry": "p-pipe/index.d.ts",
+    "camelKey": "pPipe",
+    "hasDefault": true,
+    "exportEquals": false,
+    "primaryType": "function",
+    "defaultType": "function",
+    "valueNamed": [],
+    "typeNamed": [
+      "Pipeline",
+      "UnaryFunction"
+    ],
+    "runtimeNamed": [],
+    "topLevel": {
+      "namespace": false,
+      "values": [
+        {
+          "from": "default",
+          "to": "pPipe"
+        }
+      ],
+      "types": [
+        "pPipePipeline",
+        "pPipeUnaryFunction"
+      ]
+    }
+  },
+  "p-progress": {
+    "version": "1.0.0",
+    "typeEntry": "p-progress/index.d.ts",
+    "camelKey": "pProgress",
+    "hasDefault": true,
+    "exportEquals": false,
+    "primaryType": "function",
+    "defaultType": "function",
+    "valueNamed": [
+      "PProgress"
+    ],
+    "typeNamed": [
+      "Options",
+      "ProgressNotifier",
+      "PromiseFactory",
+      "PromiseSettledResult"
+    ],
+    "runtimeNamed": [
+      "PProgress"
+    ],
+    "topLevel": {
+      "namespace": false,
+      "values": [
+        {
+          "from": "default",
+          "to": "pProgress"
+        },
+        {
+          "from": "PProgress",
+          "to": "PProgress"
+        }
+      ],
+      "types": [
+        "pProgressOptions",
+        "pProgressProgressNotifier",
+        "pProgressPromiseFactory",
+        "pProgressPromiseSettledResult"
+      ]
+    }
+  },
+  "p-props": {
+    "version": "6.1.0",
+    "typeEntry": "p-props/index.d.ts",
+    "camelKey": "pProps",
+    "hasDefault": true,
+    "exportEquals": false,
+    "primaryType": "function",
+    "defaultType": "function",
+    "valueNamed": [
+      "pPropsAllSettled"
+    ],
+    "typeNamed": [
+      "Mapper",
+      "Options"
+    ],
+    "runtimeNamed": [
+      "pPropsAllSettled"
+    ],
+    "topLevel": {
+      "namespace": false,
+      "values": [
+        {
+          "from": "default",
+          "to": "pProps"
+        },
+        {
+          "from": "pPropsAllSettled",
+          "to": "pPropsAllSettled"
+        }
+      ],
+      "types": [
+        "pPropsMapper",
+        "pPropsOptions"
+      ]
+    }
+  },
+  "p-queue": {
+    "version": "9.3.3",
+    "typeEntry": "p-queue/dist/index.d.ts",
+    "camelKey": "pQueue",
+    "hasDefault": true,
+    "exportEquals": false,
+    "primaryType": "function",
+    "defaultType": "function",
+    "valueNamed": [
+      "PriorityQueue",
+      "TimeoutError"
+    ],
+    "typeNamed": [
+      "Options",
+      "Queue",
+      "QueueAddOptions"
+    ],
+    "runtimeNamed": [
+      "PriorityQueue",
+      "TimeoutError"
+    ],
+    "topLevel": {
+      "namespace": false,
+      "values": [
+        {
+          "from": "default",
+          "to": "pQueue"
+        },
+        {
+          "from": "PriorityQueue",
+          "to": "pQueuePriorityQueue"
+        },
+        {
+          "from": "TimeoutError",
+          "to": "pQueueTimeoutError"
+        }
+      ],
+      "types": [
+        "pQueueOptions",
+        "pQueueQueue",
+        "pQueueQueueAddOptions"
+      ]
+    }
+  },
+  "p-race": {
+    "version": "3.1.0",
+    "typeEntry": "p-race/index.d.ts",
+    "camelKey": "pRace",
+    "hasDefault": true,
+    "exportEquals": false,
+    "primaryType": "function",
+    "defaultType": "function",
+    "valueNamed": [],
+    "typeNamed": [
+      "IterableOfPromiseLike"
+    ],
+    "runtimeNamed": [],
+    "topLevel": {
+      "namespace": false,
+      "values": [
+        {
+          "from": "default",
+          "to": "pRace"
+        }
+      ],
+      "types": [
+        "pRaceIterableOfPromiseLike"
+      ]
+    }
+  },
+  "p-reduce": {
+    "version": "3.0.0",
+    "typeEntry": "p-reduce/index.d.ts",
+    "camelKey": "pReduce",
+    "hasDefault": true,
+    "exportEquals": false,
+    "primaryType": "function",
+    "defaultType": "function",
+    "valueNamed": [],
+    "typeNamed": [
+      "ReducerFunction"
+    ],
+    "runtimeNamed": [],
+    "topLevel": {
+      "namespace": false,
+      "values": [
+        {
+          "from": "default",
+          "to": "pReduce"
+        }
+      ],
+      "types": [
+        "pReduceReducerFunction"
+      ]
+    }
+  },
+  "p-reflect": {
+    "version": "3.1.0",
+    "typeEntry": "p-reflect/index.d.ts",
+    "camelKey": "pReflect",
+    "hasDefault": true,
+    "exportEquals": false,
+    "primaryType": "function",
+    "defaultType": "function",
+    "valueNamed": [
+      "isFulfilled",
+      "isRejected"
+    ],
+    "typeNamed": [
+      "PromiseFulfilledResult",
+      "PromiseRejectedResult",
+      "PromiseResult"
+    ],
+    "runtimeNamed": [
+      "isFulfilled",
+      "isRejected"
+    ],
+    "topLevel": {
+      "namespace": false,
+      "values": [
+        {
+          "from": "default",
+          "to": "pReflect"
+        },
+        {
+          "from": "isFulfilled",
+          "to": "pReflectIsFulfilled"
+        },
+        {
+          "from": "isRejected",
+          "to": "pReflectIsRejected"
+        }
+      ],
+      "types": [
+        "pReflectPromiseFulfilledResult",
+        "pReflectPromiseRejectedResult",
+        "pReflectPromiseResult"
+      ]
+    }
+  },
+  "p-retry": {
+    "version": "8.0.1",
+    "typeEntry": "p-retry/index.d.ts",
+    "camelKey": "pRetry",
+    "hasDefault": true,
+    "exportEquals": false,
+    "primaryType": "function",
+    "defaultType": "function",
+    "valueNamed": [
+      "AbortError",
+      "makeRetriable"
+    ],
+    "typeNamed": [
+      "Options",
+      "RetryContext"
+    ],
+    "runtimeNamed": [
+      "AbortError",
+      "makeRetriable"
+    ],
+    "topLevel": {
+      "namespace": false,
+      "values": [
+        {
+          "from": "default",
+          "to": "pRetry"
+        },
+        {
+          "from": "AbortError",
+          "to": "pRetryAbortError"
+        },
+        {
+          "from": "makeRetriable",
+          "to": "pRetryMakeRetriable"
+        }
+      ],
+      "types": [
+        "pRetryOptions",
+        "pRetryRetryContext"
+      ]
+    }
+  },
+  "p-series": {
+    "version": "3.0.0",
+    "typeEntry": "p-series/index.d.ts",
+    "camelKey": "pSeries",
+    "hasDefault": true,
+    "exportEquals": false,
+    "primaryType": "function",
+    "defaultType": "function",
+    "valueNamed": [],
+    "typeNamed": [],
+    "runtimeNamed": [],
+    "topLevel": {
+      "namespace": false,
+      "values": [
+        {
+          "from": "default",
+          "to": "pSeries"
+        }
+      ],
+      "types": []
+    }
+  },
+  "p-settle": {
+    "version": "5.2.1",
+    "typeEntry": "p-settle/index.d.ts",
+    "camelKey": "pSettle",
+    "hasDefault": true,
+    "exportEquals": false,
+    "primaryType": "function",
+    "defaultType": "function",
+    "valueNamed": [
+      "isFulfilled",
+      "isRejected"
+    ],
+    "typeNamed": [
+      "Options",
+      "PromiseResult"
+    ],
+    "runtimeNamed": [
+      "isFulfilled",
+      "isRejected"
+    ],
+    "topLevel": {
+      "namespace": false,
+      "values": [
+        {
+          "from": "default",
+          "to": "pSettle"
+        },
+        {
+          "from": "isFulfilled",
+          "to": "pSettleIsFulfilled"
+        },
+        {
+          "from": "isRejected",
+          "to": "pSettleIsRejected"
+        }
+      ],
+      "types": [
+        "pSettleOptions",
+        "pSettlePromiseResult"
+      ]
+    }
+  },
+  "p-some": {
+    "version": "7.0.0",
+    "typeEntry": "p-some/index.d.ts",
+    "camelKey": "pSome",
+    "hasDefault": true,
+    "exportEquals": false,
+    "primaryType": "function",
+    "defaultType": "function",
+    "valueNamed": [
+      "FilterError",
+      "pEvery"
+    ],
+    "typeNamed": [
+      "EveryOptions",
+      "Options",
+      "Value"
+    ],
+    "runtimeNamed": [
+      "FilterError",
+      "pEvery"
+    ],
+    "topLevel": {
+      "namespace": false,
+      "values": [
+        {
+          "from": "default",
+          "to": "pSome"
+        },
+        {
+          "from": "FilterError",
+          "to": "pSomeFilterError"
+        },
+        {
+          "from": "pEvery",
+          "to": "pSomePEvery"
+        }
+      ],
+      "types": [
+        "pSomeEveryOptions",
+        "pSomeOptions",
+        "pSomeValue"
+      ]
+    }
+  },
+  "p-state": {
+    "version": "3.0.0",
+    "typeEntry": "p-state/index.d.ts",
+    "camelKey": "pState",
+    "hasDefault": false,
+    "exportEquals": false,
+    "primaryType": "object",
+    "defaultType": null,
+    "valueNamed": [
+      "promiseStateAsync",
+      "promiseStateSync"
+    ],
+    "typeNamed": [
+      "PromiseState"
+    ],
+    "runtimeNamed": [
+      "promiseStateAsync",
+      "promiseStateSync"
+    ],
+    "topLevel": {
+      "namespace": true,
+      "values": [
+        {
+          "from": "promiseStateAsync",
+          "to": "pStateAsync"
+        },
+        {
+          "from": "promiseStateSync",
+          "to": "pStateSync"
+        }
+      ],
+      "types": [
+        "pStatePromiseState"
+      ]
+    }
+  },
+  "p-tap": {
+    "version": "4.0.0",
+    "typeEntry": "p-tap/index.d.ts",
+    "camelKey": "pTap",
+    "hasDefault": true,
+    "exportEquals": false,
+    "primaryType": "function",
+    "defaultType": "function",
+    "valueNamed": [],
+    "typeNamed": [],
+    "runtimeNamed": [],
+    "topLevel": {
+      "namespace": false,
+      "values": [
+        {
+          "from": "default",
+          "to": "pTap"
+        }
+      ],
+      "types": []
+    }
+  },
+  "p-throttle": {
+    "version": "8.1.0",
+    "typeEntry": "p-throttle/index.d.ts",
+    "camelKey": "pThrottle",
+    "hasDefault": true,
+    "exportEquals": false,
+    "primaryType": "function",
+    "defaultType": "function",
+    "valueNamed": [],
+    "typeNamed": [
+      "AnyFunction",
+      "Options",
+      "ThrottledFunction"
+    ],
+    "runtimeNamed": [],
+    "topLevel": {
+      "namespace": false,
+      "values": [
+        {
+          "from": "default",
+          "to": "pThrottle"
+        }
+      ],
+      "types": [
+        "pThrottleAnyFunction",
+        "pThrottleOptions",
+        "pThrottleThrottledFunction"
+      ]
+    }
+  },
+  "p-time": {
+    "version": "4.0.0",
+    "typeEntry": "p-time/index.d.ts",
+    "camelKey": "pTime",
+    "hasDefault": true,
+    "exportEquals": false,
+    "primaryType": "function",
+    "defaultType": "function",
+    "valueNamed": [],
+    "typeNamed": [
+      "PromiseWithTime"
+    ],
+    "runtimeNamed": [],
+    "topLevel": {
+      "namespace": false,
+      "values": [
+        {
+          "from": "default",
+          "to": "pTime"
+        }
+      ],
+      "types": [
+        "pTimePromiseWithTime"
+      ]
+    }
+  },
+  "p-timeout": {
+    "version": "7.0.1",
+    "typeEntry": "p-timeout/index.d.ts",
+    "camelKey": "pTimeout",
+    "hasDefault": true,
+    "exportEquals": false,
+    "primaryType": "function",
+    "defaultType": "function",
+    "valueNamed": [
+      "TimeoutError"
+    ],
+    "typeNamed": [
+      "ClearablePromise",
+      "Options"
+    ],
+    "runtimeNamed": [
+      "TimeoutError"
+    ],
+    "topLevel": {
+      "namespace": false,
+      "values": [
+        {
+          "from": "default",
+          "to": "pTimeout"
+        },
+        {
+          "from": "TimeoutError",
+          "to": "pTimeoutError"
+        }
+      ],
+      "types": [
+        "pTimeoutClearablePromise",
+        "pTimeoutOptions"
+      ]
+    }
+  },
+  "p-times": {
+    "version": "4.0.0",
+    "typeEntry": "p-times/index.d.ts",
+    "camelKey": "pTimes",
+    "hasDefault": true,
+    "exportEquals": false,
+    "primaryType": "function",
+    "defaultType": "function",
+    "valueNamed": [],
+    "typeNamed": [
+      "Options"
+    ],
+    "runtimeNamed": [],
+    "topLevel": {
+      "namespace": false,
+      "values": [
+        {
+          "from": "default",
+          "to": "pTimes"
+        }
+      ],
+      "types": [
+        "pTimesOptions"
+      ]
+    }
+  },
+  "p-try": {
+    "version": "3.0.0",
+    "typeEntry": "p-try/index.d.ts",
+    "camelKey": "pTry",
+    "hasDefault": true,
+    "exportEquals": false,
+    "primaryType": "function",
+    "defaultType": "function",
+    "valueNamed": [],
+    "typeNamed": [],
+    "runtimeNamed": [],
+    "topLevel": {
+      "namespace": false,
+      "values": [
+        {
+          "from": "default",
+          "to": "pTry"
+        }
+      ],
+      "types": []
+    }
+  },
+  "p-wait-for": {
+    "version": "6.0.0",
+    "typeEntry": "p-wait-for/index.d.ts",
+    "camelKey": "pWaitFor",
+    "hasDefault": true,
+    "exportEquals": false,
+    "primaryType": "function",
+    "defaultType": "function",
+    "valueNamed": [
+      "TimeoutError"
+    ],
+    "typeNamed": [
+      "Options",
+      "TimeoutOptions"
+    ],
+    "runtimeNamed": [
+      "TimeoutError"
+    ],
+    "topLevel": {
+      "namespace": false,
+      "values": [
+        {
+          "from": "default",
+          "to": "pWaitFor"
+        },
+        {
+          "from": "TimeoutError",
+          "to": "pWaitForTimeoutError"
+        }
+      ],
+      "types": [
+        "pWaitForOptions",
+        "pWaitForTimeoutOptions"
+      ]
+    }
+  },
+  "p-waterfall": {
+    "version": "3.0.0",
+    "typeEntry": "p-waterfall/index.d.ts",
+    "camelKey": "pWaterfall",
+    "hasDefault": true,
+    "exportEquals": false,
+    "primaryType": "function",
+    "defaultType": "function",
+    "valueNamed": [],
+    "typeNamed": [
+      "InitialTask",
+      "Task"
+    ],
+    "runtimeNamed": [],
+    "topLevel": {
+      "namespace": false,
+      "values": [
+        {
+          "from": "default",
+          "to": "pWaterfall"
+        }
+      ],
+      "types": [
+        "pWaterfallInitialTask",
+        "pWaterfallTask"
+      ]
+    }
+  },
+  "p-whilst": {
+    "version": "3.2.0",
+    "typeEntry": "p-whilst/index.d.ts",
+    "camelKey": "pWhilst",
+    "hasDefault": true,
+    "exportEquals": false,
+    "primaryType": "function",
+    "defaultType": "function",
+    "valueNamed": [],
+    "typeNamed": [],
+    "runtimeNamed": [],
+    "topLevel": {
+      "namespace": false,
+      "values": [
+        {
+          "from": "default",
+          "to": "pWhilst"
+        }
+      ],
+      "types": []
+    }
+  },
+  "pify": {
+    "version": "6.1.0",
+    "typeEntry": "pify/index.d.ts",
+    "camelKey": "pify",
+    "hasDefault": true,
+    "exportEquals": false,
+    "primaryType": "function",
+    "defaultType": "function",
+    "valueNamed": [],
+    "typeNamed": [
+      "DropLastArrayElement",
+      "InternalOptions",
+      "LastArrayElement",
+      "Options",
+      "Promisify",
+      "PromisifyModule",
+      "StringEndsWith"
+    ],
+    "runtimeNamed": [],
+    "topLevel": {
+      "namespace": false,
+      "values": [
+        {
+          "from": "default",
+          "to": "pify"
+        }
+      ],
+      "types": [
+        "pifyDropLastArrayElement",
+        "pifyInternalOptions",
+        "pifyLastArrayElement",
+        "pifyOptions",
+        "pifyPromisify",
+        "pifyPromisifyModule",
+        "pifyStringEndsWith"
+      ]
+    }
+  },
+  "yoctodelay": {
+    "version": "2.0.0",
+    "typeEntry": "yoctodelay/index.d.ts",
+    "camelKey": "yoctodelay",
+    "hasDefault": true,
+    "exportEquals": false,
+    "primaryType": "function",
+    "defaultType": "function",
+    "valueNamed": [],
+    "typeNamed": [],
+    "runtimeNamed": [],
+    "topLevel": {
+      "namespace": false,
+      "values": [
+        {
+          "from": "default",
+          "to": "yoctodelay"
+        }
+      ],
+      "types": []
+    }
+  }
+}
