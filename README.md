@@ -141,7 +141,7 @@ One exception: `p-break@2` ships no types, so this package declares its surface 
 npm install
 npm test        # build + vitest (smoke + parity) + type tests
 npm run lint    # eslint + prettier
-npx publint && npx attw --pack .
+npx publint && npx attw --pack . # attw runs under the esm-only profile (see .attw.json)
 ```
 
 The re-export layer is generated: after any dependency bump, run `npm run generate:exports` and review the diff to `src/` and `scripts/expected-exports.json`. The parity test fails when `node_modules` drift from the snapshot — that is the signal to regenerate.
