@@ -1,0 +1,11 @@
+dist/
+coverage/
+node_modules/
+package-lock.json
+# Machine-generated re-export layer (regenerate, don't format)
+src/*.ts
+!src/p-break.ts
+!src/shims.d.ts
+scripts/expected-exports.json
+# IDE-local settings
+.vscode/
