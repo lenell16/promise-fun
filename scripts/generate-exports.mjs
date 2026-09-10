@@ -34,6 +34,11 @@ const snapshotPath = path.join(
 );
 const modulesDirectory = path.join(rootDirectory, 'node_modules');
 
+// Synthetic namespace keys injected by Node's CJS interop. `module.exports`
+// appears on Node 24+ but not on Node 22, so it must be filtered everywhere
+// (here and in the parity test) to keep the snapshot version-stable. It is
+// never public API — nobody imports {module.exports} from these packages.
+const SYNTHETIC_CJS_KEYS = new Set(['__esModule', 'module.exports']);
 // Hand-picked top-level names where the mechanical <camel><Name> rule reads badly.
 // Rule of thumb: when the upstream name already contains the package stem
 // (pMapSkip, PProgress, …), keep it verbatim; when the stem repeats
@@ -189,7 +194,7 @@ for (const dependencyName of dependencyNames) {
 	);
 	const namespace = await import(dependencyName);
 	const runtimeKeys = Object.keys(namespace)
-		.filter((key) => key !== '__esModule')
+		.filter((key) => !SYNTHETIC_CJS_KEYS.has(key))
 		.sort();
 	const runtimeHasDefault = runtimeKeys.includes('default');
 	const runtimeNamed = runtimeKeys.filter((key) => key !== 'default');

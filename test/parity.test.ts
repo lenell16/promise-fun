@@ -9,6 +9,16 @@ const distDirectory = path.join(rootDirectory, 'dist');
 const distUrl = (file: string) =>
 	pathToFileURL(path.join(distDirectory, file)).href;
 
+// Synthetic keys from Node's CJS interop (see SYNTHETIC_CJS_KEYS in
+// scripts/generate-exports.mjs): `module.exports` shows up on Node 24+ but
+// not on Node 22. Filtered on both sides of every comparison.
+const isSynthetic = (key: string) =>
+	key === '__esModule' || key === 'module.exports';
+const liveKeysOf = (namespace: Record<string, unknown>) =>
+	Object.keys(namespace)
+		.filter((key) => !isSynthetic(key))
+		.sort();
+
 // Guards against drift between node_modules and the generated re-export
 // layer. When a dependency bump changes a surface, this test fails with the
 // diff — re-run `npm run generate:exports` and review the result.
@@ -26,9 +36,7 @@ describe('parity with upstream surfaces', () => {
 			expect(installed.version, `${dependency} version`).toBe(entry.version);
 
 			const live = (await import(dependency)) as Record<string, unknown>;
-			const liveKeys = Object.keys(live)
-				.filter((key) => key !== '__esModule')
-				.sort();
+			const liveKeys = liveKeysOf(live);
 			const snapshottedKeys = [
 				...(entry.hasDefault ? ['default'] : []),
 				...entry.runtimeNamed,
@@ -39,10 +47,9 @@ describe('parity with upstream surfaces', () => {
 				string,
 				unknown
 			>;
-			expect(
-				Object.keys(subpath).sort(),
-				`${dependency} subpath surface`,
-			).toEqual(liveKeys);
+			expect(liveKeysOf(subpath), `${dependency} subpath surface`).toEqual(
+				liveKeys,
+			);
 			for (const key of liveKeys) {
 				expect(subpath[key], `${dependency} subpath identity: ${key}`).toBe(
 					live[key],
