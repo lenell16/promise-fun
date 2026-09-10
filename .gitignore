@@ -75,3 +75,10 @@ typings/
 .history
 
 # End of https://www.gitignore.io/api/visualstudiocode
+
+# Build output
+dist/
+
+# Test coverage
+coverage/
+.nyc_output/

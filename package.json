@@ -1,70 +1,489 @@
 {
-  "name": "promise-fun",
-  "version": "1.0.1",
-  "description": "Aggregation of Sindresorhus's promise-fun npm modules",
-  "main": "index.js",
-  "author": "Alonzo Thomas",
-  "repository": "github:lenell16/promise-fun",
-  "keywords": [
-    "promise",
-    "async",
-    "await",
-    "promises",
-    "concurrently",
-    "concurrency",
-    "parallel",
-    "bluebird"
-  ],
-  "license": "MIT",
-  "dependencies": {
-    "delay": "^2.0.0",
-    "hard-rejection": "^1.0.0",
-    "loud-rejection": "^1.6.0",
-    "p-all": "^1.0.0",
-    "p-any": "^1.1.0",
-    "p-break": "^0.1.0",
-    "p-cancelable": "^0.3.0",
-    "p-catch-if": "^1.0.2",
-    "p-debounce": "^1.0.0",
-    "p-defer": "^1.0.0",
-    "p-do-whilst": "^0.1.0",
-    "p-each-series": "^1.0.0",
-    "p-event": "^1.3.0",
-    "p-every": "^1.0.2",
-    "p-filter": "^1.0.0",
-    "p-finally": "^1.0.0",
-    "p-forever": "^1.0.1",
-    "p-if": "^1.1.0",
-    "p-immediate": "^2.1.0",
-    "p-is-promise": "^1.1.0",
-    "p-lazy": "^1.0.0",
-    "p-limit": "^1.1.0",
-    "p-locate": "^2.0.0",
-    "p-log": "^1.0.0",
-    "p-map": "^1.2.0",
-    "p-map-series": "^1.0.0",
-    "p-memoize": "^1.0.0",
-    "p-min-delay": "^2.0.0",
-    "p-one": "^1.0.0",
-    "p-pipe": "^1.2.0",
-    "p-props": "^1.0.0",
-    "p-queue": "^2.2.0",
-    "p-race": "^1.0.0",
-    "p-reduce": "^1.0.0",
-    "p-reflect": "^1.0.0",
-    "p-retry": "^1.0.0",
-    "p-series": "^1.0.0",
-    "p-settle": "^2.0.0",
-    "p-some": "^2.0.0",
-    "p-tap": "^1.0.0",
-    "p-throttle": "^1.1.0",
-    "p-time": "^1.0.0",
-    "p-timeout": "^1.2.0",
-    "p-times": "^1.0.1",
-    "p-try": "^1.0.0",
-    "p-wait-for": "^1.0.0",
-    "p-waterfall": "^1.0.0",
-    "p-whilst": "^1.0.0",
-    "pify": "^3.0.0"
-  }
+	"name": "promise-fun",
+	"version": "2.0.0",
+	"description": "Aggregation of Sindre Sorhus's promise-fun npm modules",
+	"type": "module",
+	"main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.js"
+		},
+		"./delay": {
+			"types": "./dist/delay.d.ts",
+			"import": "./dist/delay.js"
+		},
+		"./hard-rejection": {
+			"types": "./dist/hard-rejection.d.ts",
+			"import": "./dist/hard-rejection.js"
+		},
+		"./loud-rejection": {
+			"types": "./dist/loud-rejection.d.ts",
+			"import": "./dist/loud-rejection.js"
+		},
+		"./make-synchronous": {
+			"types": "./dist/make-synchronous.d.ts",
+			"import": "./dist/make-synchronous.js"
+		},
+		"./p-all": {
+			"types": "./dist/p-all.d.ts",
+			"import": "./dist/p-all.js"
+		},
+		"./p-any": {
+			"types": "./dist/p-any.d.ts",
+			"import": "./dist/p-any.js"
+		},
+		"./p-break": {
+			"types": "./dist/p-break.d.ts",
+			"import": "./dist/p-break.js"
+		},
+		"./p-cancelable": {
+			"types": "./dist/p-cancelable.d.ts",
+			"import": "./dist/p-cancelable.js"
+		},
+		"./p-catch-if": {
+			"types": "./dist/p-catch-if.d.ts",
+			"import": "./dist/p-catch-if.js"
+		},
+		"./p-debounce": {
+			"types": "./dist/p-debounce.d.ts",
+			"import": "./dist/p-debounce.js"
+		},
+		"./p-defer": {
+			"types": "./dist/p-defer.d.ts",
+			"import": "./dist/p-defer.js"
+		},
+		"./p-do-whilst": {
+			"types": "./dist/p-do-whilst.d.ts",
+			"import": "./dist/p-do-whilst.js"
+		},
+		"./p-each-series": {
+			"types": "./dist/p-each-series.d.ts",
+			"import": "./dist/p-each-series.js"
+		},
+		"./p-event": {
+			"types": "./dist/p-event.d.ts",
+			"import": "./dist/p-event.js"
+		},
+		"./p-every": {
+			"types": "./dist/p-every.d.ts",
+			"import": "./dist/p-every.js"
+		},
+		"./p-filter": {
+			"types": "./dist/p-filter.d.ts",
+			"import": "./dist/p-filter.js"
+		},
+		"./p-forever": {
+			"types": "./dist/p-forever.d.ts",
+			"import": "./dist/p-forever.js"
+		},
+		"./p-if": {
+			"types": "./dist/p-if.d.ts",
+			"import": "./dist/p-if.js"
+		},
+		"./p-immediate": {
+			"types": "./dist/p-immediate.d.ts",
+			"import": "./dist/p-immediate.js"
+		},
+		"./p-is-promise": {
+			"types": "./dist/p-is-promise.d.ts",
+			"import": "./dist/p-is-promise.js"
+		},
+		"./p-lazy": {
+			"types": "./dist/p-lazy.d.ts",
+			"import": "./dist/p-lazy.js"
+		},
+		"./p-limit": {
+			"types": "./dist/p-limit.d.ts",
+			"import": "./dist/p-limit.js"
+		},
+		"./p-locate": {
+			"types": "./dist/p-locate.d.ts",
+			"import": "./dist/p-locate.js"
+		},
+		"./p-log": {
+			"types": "./dist/p-log.d.ts",
+			"import": "./dist/p-log.js"
+		},
+		"./p-map": {
+			"types": "./dist/p-map.d.ts",
+			"import": "./dist/p-map.js"
+		},
+		"./p-map-series": {
+			"types": "./dist/p-map-series.d.ts",
+			"import": "./dist/p-map-series.js"
+		},
+		"./p-memoize": {
+			"types": "./dist/p-memoize.d.ts",
+			"import": "./dist/p-memoize.js"
+		},
+		"./p-min-delay": {
+			"types": "./dist/p-min-delay.d.ts",
+			"import": "./dist/p-min-delay.js"
+		},
+		"./p-mutex": {
+			"types": "./dist/p-mutex.d.ts",
+			"import": "./dist/p-mutex.js"
+		},
+		"./p-one": {
+			"types": "./dist/p-one.d.ts",
+			"import": "./dist/p-one.js"
+		},
+		"./p-pipe": {
+			"types": "./dist/p-pipe.d.ts",
+			"import": "./dist/p-pipe.js"
+		},
+		"./p-progress": {
+			"types": "./dist/p-progress.d.ts",
+			"import": "./dist/p-progress.js"
+		},
+		"./p-props": {
+			"types": "./dist/p-props.d.ts",
+			"import": "./dist/p-props.js"
+		},
+		"./p-queue": {
+			"types": "./dist/p-queue.d.ts",
+			"import": "./dist/p-queue.js"
+		},
+		"./p-race": {
+			"types": "./dist/p-race.d.ts",
+			"import": "./dist/p-race.js"
+		},
+		"./p-reduce": {
+			"types": "./dist/p-reduce.d.ts",
+			"import": "./dist/p-reduce.js"
+		},
+		"./p-reflect": {
+			"types": "./dist/p-reflect.d.ts",
+			"import": "./dist/p-reflect.js"
+		},
+		"./p-retry": {
+			"types": "./dist/p-retry.d.ts",
+			"import": "./dist/p-retry.js"
+		},
+		"./p-series": {
+			"types": "./dist/p-series.d.ts",
+			"import": "./dist/p-series.js"
+		},
+		"./p-settle": {
+			"types": "./dist/p-settle.d.ts",
+			"import": "./dist/p-settle.js"
+		},
+		"./p-some": {
+			"types": "./dist/p-some.d.ts",
+			"import": "./dist/p-some.js"
+		},
+		"./p-state": {
+			"types": "./dist/p-state.d.ts",
+			"import": "./dist/p-state.js"
+		},
+		"./p-tap": {
+			"types": "./dist/p-tap.d.ts",
+			"import": "./dist/p-tap.js"
+		},
+		"./p-throttle": {
+			"types": "./dist/p-throttle.d.ts",
+			"import": "./dist/p-throttle.js"
+		},
+		"./p-time": {
+			"types": "./dist/p-time.d.ts",
+			"import": "./dist/p-time.js"
+		},
+		"./p-timeout": {
+			"types": "./dist/p-timeout.d.ts",
+			"import": "./dist/p-timeout.js"
+		},
+		"./p-times": {
+			"types": "./dist/p-times.d.ts",
+			"import": "./dist/p-times.js"
+		},
+		"./p-try": {
+			"types": "./dist/p-try.d.ts",
+			"import": "./dist/p-try.js"
+		},
+		"./p-wait-for": {
+			"types": "./dist/p-wait-for.d.ts",
+			"import": "./dist/p-wait-for.js"
+		},
+		"./p-waterfall": {
+			"types": "./dist/p-waterfall.d.ts",
+			"import": "./dist/p-waterfall.js"
+		},
+		"./p-whilst": {
+			"types": "./dist/p-whilst.d.ts",
+			"import": "./dist/p-whilst.js"
+		},
+		"./pify": {
+			"types": "./dist/pify.d.ts",
+			"import": "./dist/pify.js"
+		},
+		"./yoctodelay": {
+			"types": "./dist/yoctodelay.d.ts",
+			"import": "./dist/yoctodelay.js"
+		},
+		"./package.json": "./package.json"
+	},
+	"engines": {
+		"node": ">=22"
+	},
+	"sideEffects": false,
+	"files": [
+		"dist",
+		"README.md",
+		"LICENSE",
+		"CHANGELOG.md"
+	],
+	"scripts": {
+		"build": "tsc -p tsconfig.json",
+		"generate:exports": "node scripts/generate-exports.mjs",
+		"test": "npm run build && vitest run && npm run test:types",
+		"test:types": "tsc --noEmit -p tsconfig.types.json",
+		"lint": "eslint . && prettier --check .",
+		"lint:pack": "publint",
+		"prepack": "npm run build"
+	},
+	"keywords": [
+		"promise",
+		"async",
+		"await",
+		"promises",
+		"concurrently",
+		"concurrency",
+		"parallel",
+		"bluebird"
+	],
+	"author": "Alonzo Thomas",
+	"repository": "github:lenell16/promise-fun",
+	"license": "MIT",
+	"dependencies": {
+		"delay": "^7.0.0",
+		"hard-rejection": "^2.1.0",
+		"loud-rejection": "^2.2.0",
+		"make-synchronous": "^2.1.0",
+		"p-all": "^5.0.1",
+		"p-any": "^4.0.0",
+		"p-break": "^2.0.0",
+		"p-cancelable": "^4.0.1",
+		"p-catch-if": "^3.0.0",
+		"p-debounce": "^5.1.0",
+		"p-defer": "^4.0.1",
+		"p-do-whilst": "^2.1.0",
+		"p-each-series": "^3.0.0",
+		"p-event": "^7.1.0",
+		"p-every": "^2.0.0",
+		"p-filter": "^4.1.0",
+		"p-forever": "^4.0.0",
+		"p-if": "^3.0.0",
+		"p-immediate": "^4.0.0",
+		"p-is-promise": "^4.0.0",
+		"p-lazy": "^5.0.0",
+		"p-limit": "^7.3.2",
+		"p-locate": "^7.0.0",
+		"p-log": "^3.0.0",
+		"p-map": "^7.0.7",
+		"p-map-series": "^3.0.0",
+		"p-memoize": "^8.0.0",
+		"p-min-delay": "^4.2.0",
+		"p-mutex": "^1.0.0",
+		"p-one": "^2.0.0",
+		"p-pipe": "^4.0.0",
+		"p-progress": "^1.0.0",
+		"p-props": "^6.1.0",
+		"p-queue": "^9.3.3",
+		"p-race": "^3.1.0",
+		"p-reduce": "^3.0.0",
+		"p-reflect": "^3.1.0",
+		"p-retry": "^8.0.1",
+		"p-series": "^3.0.0",
+		"p-settle": "^5.2.1",
+		"p-some": "^7.0.0",
+		"p-state": "^3.0.0",
+		"p-tap": "^4.0.0",
+		"p-throttle": "^8.1.0",
+		"p-time": "^4.0.0",
+		"p-timeout": "^7.0.1",
+		"p-times": "^4.0.0",
+		"p-try": "^3.0.0",
+		"p-wait-for": "^6.0.0",
+		"p-waterfall": "^3.0.0",
+		"p-whilst": "^3.2.0",
+		"pify": "^6.1.0",
+		"yoctodelay": "^2.0.0"
+	},
+	"devDependencies": {
+		"@arethetypeswrong/cli": "^0.18.5",
+		"@eslint/js": "^10.0.1",
+		"@types/node": "^22.20.2",
+		"eslint": "^10.10.0",
+		"globals": "^17.12.0",
+		"prettier": "^3.9.6",
+		"publint": "^0.3.24",
+		"typescript": "^6.0.3",
+		"typescript-eslint": "^8.70.0",
+		"vitest": "^5.0.0"
+	},
+	"typesVersions": {
+		"*": {
+			"delay": [
+				"./dist/delay.d.ts"
+			],
+			"hard-rejection": [
+				"./dist/hard-rejection.d.ts"
+			],
+			"loud-rejection": [
+				"./dist/loud-rejection.d.ts"
+			],
+			"make-synchronous": [
+				"./dist/make-synchronous.d.ts"
+			],
+			"p-all": [
+				"./dist/p-all.d.ts"
+			],
+			"p-any": [
+				"./dist/p-any.d.ts"
+			],
+			"p-break": [
+				"./dist/p-break.d.ts"
+			],
+			"p-cancelable": [
+				"./dist/p-cancelable.d.ts"
+			],
+			"p-catch-if": [
+				"./dist/p-catch-if.d.ts"
+			],
+			"p-debounce": [
+				"./dist/p-debounce.d.ts"
+			],
+			"p-defer": [
+				"./dist/p-defer.d.ts"
+			],
+			"p-do-whilst": [
+				"./dist/p-do-whilst.d.ts"
+			],
+			"p-each-series": [
+				"./dist/p-each-series.d.ts"
+			],
+			"p-event": [
+				"./dist/p-event.d.ts"
+			],
+			"p-every": [
+				"./dist/p-every.d.ts"
+			],
+			"p-filter": [
+				"./dist/p-filter.d.ts"
+			],
+			"p-forever": [
+				"./dist/p-forever.d.ts"
+			],
+			"p-if": [
+				"./dist/p-if.d.ts"
+			],
+			"p-immediate": [
+				"./dist/p-immediate.d.ts"
+			],
+			"p-is-promise": [
+				"./dist/p-is-promise.d.ts"
+			],
+			"p-lazy": [
+				"./dist/p-lazy.d.ts"
+			],
+			"p-limit": [
+				"./dist/p-limit.d.ts"
+			],
+			"p-locate": [
+				"./dist/p-locate.d.ts"
+			],
+			"p-log": [
+				"./dist/p-log.d.ts"
+			],
+			"p-map": [
+				"./dist/p-map.d.ts"
+			],
+			"p-map-series": [
+				"./dist/p-map-series.d.ts"
+			],
+			"p-memoize": [
+				"./dist/p-memoize.d.ts"
+			],
+			"p-min-delay": [
+				"./dist/p-min-delay.d.ts"
+			],
+			"p-mutex": [
+				"./dist/p-mutex.d.ts"
+			],
+			"p-one": [
+				"./dist/p-one.d.ts"
+			],
+			"p-pipe": [
+				"./dist/p-pipe.d.ts"
+			],
+			"p-progress": [
+				"./dist/p-progress.d.ts"
+			],
+			"p-props": [
+				"./dist/p-props.d.ts"
+			],
+			"p-queue": [
+				"./dist/p-queue.d.ts"
+			],
+			"p-race": [
+				"./dist/p-race.d.ts"
+			],
+			"p-reduce": [
+				"./dist/p-reduce.d.ts"
+			],
+			"p-reflect": [
+				"./dist/p-reflect.d.ts"
+			],
+			"p-retry": [
+				"./dist/p-retry.d.ts"
+			],
+			"p-series": [
+				"./dist/p-series.d.ts"
+			],
+			"p-settle": [
+				"./dist/p-settle.d.ts"
+			],
+			"p-some": [
+				"./dist/p-some.d.ts"
+			],
+			"p-state": [
+				"./dist/p-state.d.ts"
+			],
+			"p-tap": [
+				"./dist/p-tap.d.ts"
+			],
+			"p-throttle": [
+				"./dist/p-throttle.d.ts"
+			],
+			"p-time": [
+				"./dist/p-time.d.ts"
+			],
+			"p-timeout": [
+				"./dist/p-timeout.d.ts"
+			],
+			"p-times": [
+				"./dist/p-times.d.ts"
+			],
+			"p-try": [
+				"./dist/p-try.d.ts"
+			],
+			"p-wait-for": [
+				"./dist/p-wait-for.d.ts"
+			],
+			"p-waterfall": [
+				"./dist/p-waterfall.d.ts"
+			],
+			"p-whilst": [
+				"./dist/p-whilst.d.ts"
+			],
+			"pify": [
+				"./dist/pify.d.ts"
+			],
+			"yoctodelay": [
+				"./dist/yoctodelay.d.ts"
+			]
+		}
+	}
 }
